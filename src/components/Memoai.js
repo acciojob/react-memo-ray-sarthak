@@ -10,7 +10,7 @@ const Memoai = () => {
   }, [todos]);
 
   const handleAddTodo = () => {
-    setTodos([...todos, 'New todo']);
+    setTodos([...todos, 'new todo']);
   };
 
   const handleIncrement = () => {
@@ -31,14 +31,14 @@ const Memoai = () => {
   };
 
   return (
-    <div>
+    <div id="main">
       <h2>Memo</h2>
-      <button onClick={handleAddTodo}>Add Todo</button>
+      <button id="add-todo-btn"onClick={handleAddTodo}>Add Todo</button>
       <div>
-        <button onClick={handleIncrement}>Increment Count: {count}</button>
+        <button  id="incr-cnt"onClick={handleIncrement}>Increment Count: {count}</button>
       </div>
       <div>
-        <input type="text" value={inputText} onChange={handleInputChange} />
+        <input id="skill-input" type="text" value={inputText} onChange={handleInputChange} />
         <button onClick={handleAddItem}>Submit</button>
       </div>
       <ul>
