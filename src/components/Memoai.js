@@ -35,11 +35,11 @@ const Memoai = () => {
       <h2>Memo</h2>
       <button id="add-todo-btn"onClick={handleAddTodo}>Add Todo</button>
       <div>
-        <button  id="incr-cnt"onClick={handleIncrement}>Increment Count: {count}</button>
+        <button  id="incr-cnt"onClick={handleIncrement}>Increment Count: <p id="calc">{count}</p></button>
       </div>
       <div>
         <input id="skill-input" type="text" value={inputText} onChange={handleInputChange} />
-        <button onClick={handleAddItem}>Submit</button>
+        <button  id="skill-btn" onClick={handleAddItem}>Submit</button>
       </div>
       <ul>
         {todos.map((todo, index) => (
