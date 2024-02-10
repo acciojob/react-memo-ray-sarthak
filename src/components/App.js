@@ -1,2 +1,18 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React, {useState} from "react";
 
+import Memoai from "./Memoai"
+
+const App=()=>{
+
+
+
+    return(
+        <div>
+     
+       <Memoai/>
+        </div>
+      
+    )
+}
+
+export default App;
